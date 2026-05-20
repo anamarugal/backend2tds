@@ -18,4 +18,18 @@ let precoInicial = 12;
 const desconto = 0.3;
 const precoComDesconto = precoInicial - desconto;
 
-console.log(``)
+console.log(`Além disso, temos 3% de desconto. Então, ao inves de você levar o produto ${nomeDoProduto} por ${precoInicial} reais, você irá levar por ${precoComDesconto} reais!`);
+
+
+// Parte 3 
+// Declarar preço e quantidade. Calcular o valor total, o valor com 20% de desconto, quantos produtos inteiros se compra com R$ 500 reais, e quanto sobra de troco.
+
+const produto = "Caderno";
+let precoSecundario = 40;
+let quantidade = 60;
+
+const descontoSecundario = 30;
+const precoComDescontoSecundario = (precoSecundario * descontoSecundario) / 100;
+
+
+console.log(`Somente nas lojas americanas, o ${produto} está saindo no preço bruto de ${precoSecundario} reais. Porém, estamos com desconto de 30%, então nosso produto ficará ${precoComDescontoSecundario}`);
