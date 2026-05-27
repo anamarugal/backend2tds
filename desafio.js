@@ -28,8 +28,21 @@ const produto = "Caderno";
 let precoSecundario = 40;
 let quantidade = 60;
 
-const descontoSecundario = 30;
-const precoComDescontoSecundario = (precoSecundario * descontoSecundario) / 100;
+const descontoSecundario = 0.20;
+const precoComDescontoSecundario = (precoSecundario * descontoSecundario);
+const precoAtualizado = precoSecundario - precoComDescontoSecundario;
+
+console.log(`Somente nas lojas americanas, o ${produto} está saindo no preço bruto de ${precoSecundario} reais. Porém, estamos com desconto de 20%, então nosso produto ficará ${precoAtualizado} reais`);
 
 
-console.log(`Somente nas lojas americanas, o ${produto} está saindo no preço bruto de ${precoSecundario} reais. Porém, estamos com desconto de 30%, então nosso produto ficará ${precoComDescontoSecundario}`);
+// Quantos produtos inteiros se compra com R$ 500 reais, e quando sobra de troco:
+
+const quinhentosReais = 500;
+const quantidadeCadernos = Math.floor(quinhentosReais / precoSecundario);
+const troco = quinhentosReais % precoSecundario;
+
+console.log(`Você pode comprar ${quantidadeCadernos} cadernos com apenas 500 reais.`);
+console.log(`E o melhor, ainda vai sobrar R$ ${troco} de troco.`);
+
+// Parte 4 
+// Declare estoque e preço e exiba se o produto, se está em falta e se precisa de reposição de produto.
